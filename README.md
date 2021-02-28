@@ -28,29 +28,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`sonoff-diy hello [FILE]`](#sonoff-diy-hello-file)
 * [`sonoff-diy help [COMMAND]`](#sonoff-diy-help-command)
-* [`sonoff-diy identify [FILE]`](#sonoff-diy-identify-file)
-
-## `sonoff-diy hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ sonoff-diy hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ sonoff-diy hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.1/src/commands/hello.ts)_
+* [`sonoff-diy identify`](#sonoff-diy-identify)
+* [`sonoff-diy list`](#sonoff-diy-list)
 
 ## `sonoff-diy help [COMMAND]`
 
@@ -69,19 +49,35 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
-## `sonoff-diy identify [FILE]`
+## `sonoff-diy identify`
 
 describe the command here
 
 ```
 USAGE
-  $ sonoff-diy identify [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ sonoff-diy identify
 ```
 
 _See code: [src/commands/identify.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.1/src/commands/identify.ts)_
+
+## `sonoff-diy list`
+
+describe the command here
+
+```
+USAGE
+  $ sonoff-diy list
+
+OPTIONS
+  -x, --extended          show extra columns
+  --columns=columns       only show provided columns (comma-separated)
+  --csv                   output is csv format [alias: --output=csv]
+  --filter=filter         filter property by partial string matching, ex: name=foo
+  --no-header             hide table header from output
+  --no-truncate           do not truncate output to fit screen
+  --output=csv|json|yaml  output in a more machine friendly format
+  --sort=sort             property to sort by (prepend '-' for descending)
+```
+
+_See code: [src/commands/list.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.1/src/commands/list.ts)_
 <!-- commandsstop -->
