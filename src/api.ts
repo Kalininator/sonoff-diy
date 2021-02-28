@@ -10,7 +10,7 @@ type SonoffInfo = {
 };
 
 export function getDeviceId(device: Device): string {
-  return device.fqdn.split('.')[0];
+  return device.fqdn.split('.')[0].replace('eWeLink_', '');
 }
 
 export async function getInfo(device: Device) {
