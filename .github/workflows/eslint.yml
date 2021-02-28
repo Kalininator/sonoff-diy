@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Linting
 
 on: [push]
 
@@ -11,4 +11,4 @@ jobs:
         with:
           node-version: 12
       - run: yarn
-      - run: yarn pr:test
+      - run: yarn pr:lint

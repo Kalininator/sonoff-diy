@@ -12,12 +12,14 @@
     "@oclif/plugin-help": "^3",
     "axios": "^0.21.1",
     "cli-ux": "^5.5.1",
+    "express": "^4.17.1",
     "inquirer": "^7.3.3",
     "node-dns-sd": "^0.4.2",
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
+    "@types/express": "^4.17.11",
     "@types/inquirer": "^7.3.1",
     "@types/jest": "^26.0.20",
     "@types/node": "^10",
@@ -69,7 +71,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "pr:lint": "./node_modules/eslint/bin/eslint.js 'src/**/*.ts'",
+    "pr:test": "jest"
   },
   "types": "lib/index.d.ts"
 }
