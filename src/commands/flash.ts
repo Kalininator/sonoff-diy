@@ -61,5 +61,7 @@ export default class Flash extends Command {
     await otaFlash(sonoff, fileUrl, hex);
 
     this.log(chalk.green('Successfully initiated flashing'));
+
+    cli.action.start(chalk.green('Waiting for device to download firmware'));
   }
 }
