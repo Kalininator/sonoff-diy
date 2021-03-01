@@ -19,7 +19,7 @@ $ npm install -g sonoff-diy
 $ sonoff-diy COMMAND
 running command...
 $ sonoff-diy (-v|--version|version)
-sonoff-diy/0.0.3 darwin-x64 node-v15.7.0
+sonoff-diy/0.0.4 darwin-x64 node-v15.7.0
 $ sonoff-diy --help [COMMAND]
 USAGE
   $ sonoff-diy COMMAND
@@ -43,9 +43,11 @@ USAGE
 
 OPTIONS
   --file=file  (required)
+  --ip=ip
+  --port=port
 ```
 
-_See code: [src/commands/flash.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.3/src/commands/flash.ts)_
+_See code: [src/commands/flash.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.4/src/commands/flash.ts)_
 
 ## `sonoff-diy help [COMMAND]`
 
@@ -73,7 +75,7 @@ USAGE
   $ sonoff-diy identify
 ```
 
-_See code: [src/commands/identify.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.3/src/commands/identify.ts)_
+_See code: [src/commands/identify.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.4/src/commands/identify.ts)_
 
 ## `sonoff-diy list`
 
@@ -94,5 +96,5 @@ OPTIONS
   --sort=sort             property to sort by (prepend '-' for descending)
 ```
 
-_See code: [src/commands/list.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.3/src/commands/list.ts)_
+_See code: [src/commands/list.ts](https://github.com/Kalininator/sonoff-diy/blob/v0.0.4/src/commands/list.ts)_
 <!-- commandsstop -->
