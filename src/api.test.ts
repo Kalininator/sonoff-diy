@@ -10,6 +10,6 @@ describe('get device id', () => {
         familyName: null,
         service: { port: 8081, protocol: 'tcp', type: 'ewelink' },
       }),
-    ).toEqual('eWeLink_1000c22fc4');
+    ).toEqual('1000c22fc4');
   });
 });
